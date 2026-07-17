@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#0a0a0a">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚡ PRUEBA EXTREMA"
+        android:textSize="22sp"
+        android:textColor="#00ff88"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🟢 SISTEMA EN ESPERA"
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:padding="14dp"
+        android:background="#4411FF11"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnToggle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="▶ INICIAR PRUEBA"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:background="#FF00FF88"
+        android:textColor="#000000"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginBottom="12dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#1a1a1a"
+            android:padding="8dp"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CICLOS"
+                android:textSize="10sp"
+                android:textColor="#667799"/>
+
+            <TextView
+                android:id="@+id/tvCiclos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="18sp"
+                android:textColor="#00ff88"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#1a1a1a"
+            android:padding="8dp"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CPU"
+                android:textSize="10sp"
+                android:textColor="#667799"/>
+
+            <TextView
+                android:id="@+id/tvCPU"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0%"
+                android:textSize="18sp"
+                android:textColor="#00ff88"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#1a1a1a"
+            android:padding="8dp"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ARCHIVOS"
+                android:textSize="10sp"
+                android:textColor="#667799"/>
+
+            <TextView
+                android:id="@+id/tvArchivos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="18sp"
+                android:textColor="#00ff88"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1a1a1a"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🧵 HILOS:"
+            android:textSize="12sp"
+            android:textColor="#667799"/>
+
+        <TextView
+            android:id="@+id/tvWorkers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 hilos"
+            android:textSize="14sp"
+            android:textColor="#00ff88"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚠️ Esta prueba CONGELARÁ el dispositivo durante la ejecución"
+        android:textSize="11sp"
+        android:textColor="#ffaa44"
+        android:gravity="center"
+        android:padding="8dp"
+        android:background="#1a1a00"/>
+
+</LinearLayout>
